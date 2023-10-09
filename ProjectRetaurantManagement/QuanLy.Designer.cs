@@ -87,9 +87,9 @@ namespace ProjectRetaurantManagement
             this.buttonTaiKhoan.Location = new System.Drawing.Point(0, 515);
             this.buttonTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonTaiKhoan.Name = "buttonTaiKhoan";
-            this.buttonTaiKhoan.Size = new System.Drawing.Size(267, 72);
+            this.buttonTaiKhoan.Size = new System.Drawing.Size(294, 72);
             this.buttonTaiKhoan.TabIndex = 2;
-            this.buttonTaiKhoan.Text = "Tài khoản";
+            this.buttonTaiKhoan.Text = "Quản lý tài khoản";
             this.buttonTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonTaiKhoan.UseVisualStyleBackColor = false;
             this.buttonTaiKhoan.Click += new System.EventHandler(this.button6_Click);
@@ -123,9 +123,9 @@ namespace ProjectRetaurantManagement
             this.buttonThucAn.Location = new System.Drawing.Point(0, 288);
             this.buttonThucAn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonThucAn.Name = "buttonThucAn";
-            this.buttonThucAn.Size = new System.Drawing.Size(249, 72);
+            this.buttonThucAn.Size = new System.Drawing.Size(268, 72);
             this.buttonThucAn.TabIndex = 2;
-            this.buttonThucAn.Text = "Thức ăn";
+            this.buttonThucAn.Text = "Quản lý món ăn";
             this.buttonThucAn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThucAn.UseVisualStyleBackColor = false;
             this.buttonThucAn.Click += new System.EventHandler(this.button2_Click);
@@ -141,9 +141,9 @@ namespace ProjectRetaurantManagement
             this.buttonDanhMuc.Location = new System.Drawing.Point(0, 402);
             this.buttonDanhMuc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonDanhMuc.Name = "buttonDanhMuc";
-            this.buttonDanhMuc.Size = new System.Drawing.Size(273, 72);
+            this.buttonDanhMuc.Size = new System.Drawing.Size(332, 72);
             this.buttonDanhMuc.TabIndex = 2;
-            this.buttonDanhMuc.Text = "Danh mục";
+            this.buttonDanhMuc.Text = "Quản lý loại món ăn";
             this.buttonDanhMuc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDanhMuc.UseVisualStyleBackColor = false;
             this.buttonDanhMuc.Click += new System.EventHandler(this.button4_Click);
@@ -159,9 +159,9 @@ namespace ProjectRetaurantManagement
             this.buttonQuanLyBan.Location = new System.Drawing.Point(0, 231);
             this.buttonQuanLyBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonQuanLyBan.Name = "buttonQuanLyBan";
-            this.buttonQuanLyBan.Size = new System.Drawing.Size(316, 72);
+            this.buttonQuanLyBan.Size = new System.Drawing.Size(270, 72);
             this.buttonQuanLyBan.TabIndex = 2;
-            this.buttonQuanLyBan.Text = "Order";
+            this.buttonQuanLyBan.Text = "Quản lý đặt bàn";
             this.buttonQuanLyBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonQuanLyBan.UseVisualStyleBackColor = false;
             this.buttonQuanLyBan.Click += new System.EventHandler(this.button1_Click);
@@ -179,7 +179,7 @@ namespace ProjectRetaurantManagement
             this.buttonBan.Name = "buttonBan";
             this.buttonBan.Size = new System.Drawing.Size(249, 72);
             this.buttonBan.TabIndex = 2;
-            this.buttonBan.Text = "Bàn";
+            this.buttonBan.Text = "Quản lý bàn";
             this.buttonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonBan.UseVisualStyleBackColor = false;
             this.buttonBan.Click += new System.EventHandler(this.button3_Click);
@@ -205,7 +205,6 @@ namespace ProjectRetaurantManagement
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // formQuanLy
             // 

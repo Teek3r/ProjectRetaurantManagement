@@ -56,12 +56,7 @@ namespace ProjectRetaurantManagement
         private void button6_Click(object sender, EventArgs e)
         {
             LoadForm(new FormTaiKhoan());
-            //fasjfld;askfjasl;dkj;sl
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
+            
         }
     }
 
