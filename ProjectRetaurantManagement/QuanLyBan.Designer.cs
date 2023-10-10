@@ -30,38 +30,37 @@
         {
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cbLoaiMon = new System.Windows.Forms.ComboBox();
-            this.cbMon = new System.Windows.Forms.ComboBox();
-            this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
             this.btnThemMon = new System.Windows.Forms.Button();
-            this.btnThanhToan = new System.Windows.Forms.Button();
-            this.btnChangeTable = new System.Windows.Forms.Button();
-            this.cbChangeTable = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txbTongTien = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
+            this.cbMon = new System.Windows.Forms.ComboBox();
+            this.cbLoaiMon = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lstBill = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txbTongTien = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnChangeTable = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.cbChangeTable = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // flpTable
             // 
             this.flpTable.AutoScroll = true;
-            this.flpTable.AutoSize = true;
             this.flpTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.flpTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpTable.Location = new System.Drawing.Point(13, 13);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(619, 667);
+            this.flpTable.Size = new System.Drawing.Size(516, 660);
             this.flpTable.TabIndex = 0;
             // 
             // panel1
@@ -70,47 +69,23 @@
             this.panel1.Controls.Add(this.nudSoLuong);
             this.panel1.Controls.Add(this.cbMon);
             this.panel1.Controls.Add(this.cbLoaiMon);
-            this.panel1.Location = new System.Drawing.Point(639, 13);
+            this.panel1.Location = new System.Drawing.Point(574, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(513, 142);
+            this.panel1.Size = new System.Drawing.Size(578, 142);
             this.panel1.TabIndex = 1;
             // 
-            // panel2
+            // btnThemMon
             // 
-            this.panel2.Controls.Add(this.listView1);
-            this.panel2.Location = new System.Drawing.Point(639, 161);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(513, 331);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txbTongTien);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.btnChangeTable);
-            this.panel3.Controls.Add(this.btnThanhToan);
-            this.panel3.Controls.Add(this.cbChangeTable);
-            this.panel3.Location = new System.Drawing.Point(638, 498);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(514, 182);
-            this.panel3.TabIndex = 1;
-            // 
-            // cbLoaiMon
-            // 
-            this.cbLoaiMon.FormattingEnabled = true;
-            this.cbLoaiMon.Location = new System.Drawing.Point(3, 3);
-            this.cbLoaiMon.Name = "cbLoaiMon";
-            this.cbLoaiMon.Size = new System.Drawing.Size(200, 28);
-            this.cbLoaiMon.TabIndex = 0;
-            // 
-            // cbMon
-            // 
-            this.cbMon.FormattingEnabled = true;
-            this.cbMon.Location = new System.Drawing.Point(3, 37);
-            this.cbMon.Name = "cbMon";
-            this.cbMon.Size = new System.Drawing.Size(200, 28);
-            this.cbMon.TabIndex = 0;
+            this.btnThemMon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnThemMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnThemMon.Location = new System.Drawing.Point(209, 3);
+            this.btnThemMon.Name = "btnThemMon";
+            this.btnThemMon.Size = new System.Drawing.Size(176, 94);
+            this.btnThemMon.TabIndex = 2;
+            this.btnThemMon.Text = "Thêm món";
+            this.btnThemMon.UseVisualStyleBackColor = false;
+            this.btnThemMon.Click += new System.EventHandler(this.btnThemMon_Click);
             // 
             // nudSoLuong
             // 
@@ -131,59 +106,76 @@
             0,
             0});
             // 
-            // btnThemMon
+            // cbMon
             // 
-            this.btnThemMon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThemMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnThemMon.Location = new System.Drawing.Point(209, 3);
-            this.btnThemMon.Name = "btnThemMon";
-            this.btnThemMon.Size = new System.Drawing.Size(176, 94);
-            this.btnThemMon.TabIndex = 2;
-            this.btnThemMon.Text = "Thêm món";
-            this.btnThemMon.UseVisualStyleBackColor = false;
+            this.cbMon.FormattingEnabled = true;
+            this.cbMon.Location = new System.Drawing.Point(3, 37);
+            this.cbMon.Name = "cbMon";
+            this.cbMon.Size = new System.Drawing.Size(200, 28);
+            this.cbMon.TabIndex = 0;
             // 
-            // btnThanhToan
+            // cbLoaiMon
             // 
-            this.btnThanhToan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnThanhToan.Location = new System.Drawing.Point(210, 85);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(176, 94);
-            this.btnThanhToan.TabIndex = 2;
-            this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.cbLoaiMon.FormattingEnabled = true;
+            this.cbLoaiMon.Location = new System.Drawing.Point(3, 3);
+            this.cbLoaiMon.Name = "cbLoaiMon";
+            this.cbLoaiMon.Size = new System.Drawing.Size(200, 28);
+            this.cbLoaiMon.TabIndex = 0;
+            this.cbLoaiMon.SelectedIndexChanged += new System.EventHandler(this.cbLoaiMon_SelectedIndexChanged);
             // 
-            // btnChangeTable
+            // panel2
             // 
-            this.btnChangeTable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnChangeTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangeTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnChangeTable.Location = new System.Drawing.Point(210, 3);
-            this.btnChangeTable.Name = "btnChangeTable";
-            this.btnChangeTable.Size = new System.Drawing.Size(176, 76);
-            this.btnChangeTable.TabIndex = 2;
-            this.btnChangeTable.Text = "Chuyển bàn";
-            this.btnChangeTable.UseVisualStyleBackColor = false;
+            this.panel2.Controls.Add(this.lstBill);
+            this.panel2.Location = new System.Drawing.Point(574, 161);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(578, 331);
+            this.panel2.TabIndex = 1;
             // 
-            // cbChangeTable
+            // lstBill
             // 
-            this.cbChangeTable.FormattingEnabled = true;
-            this.cbChangeTable.Location = new System.Drawing.Point(4, 51);
-            this.cbChangeTable.Name = "cbChangeTable";
-            this.cbChangeTable.Size = new System.Drawing.Size(200, 28);
-            this.cbChangeTable.TabIndex = 0;
+            this.lstBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lstBill.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lstBill.GridLines = true;
+            this.lstBill.HideSelection = false;
+            this.lstBill.Location = new System.Drawing.Point(3, 3);
+            this.lstBill.Name = "lstBill";
+            this.lstBill.Size = new System.Drawing.Size(382, 312);
+            this.lstBill.TabIndex = 0;
+            this.lstBill.UseCompatibleStateImageBehavior = false;
+            this.lstBill.View = System.Windows.Forms.View.Details;
             // 
-            // label1
+            // columnHeader1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(9, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Chọn bàn";
+            this.columnHeader1.Text = "Tên món";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.txbTongTien);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.btnChangeTable);
+            this.panel3.Controls.Add(this.btnThanhToan);
+            this.panel3.Controls.Add(this.cbChangeTable);
+            this.panel3.Location = new System.Drawing.Point(574, 498);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(578, 182);
+            this.panel3.TabIndex = 1;
             // 
             // txbTongTien
             // 
@@ -205,38 +197,49 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Tổng tiền";
             // 
-            // listView1
+            // label1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 3);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(382, 312);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label1.Location = new System.Drawing.Point(9, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 32);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Chọn bàn";
             // 
-            // columnHeader1
+            // btnChangeTable
             // 
-            this.columnHeader1.Text = "Tên món";
+            this.btnChangeTable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnChangeTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnChangeTable.Location = new System.Drawing.Point(210, 3);
+            this.btnChangeTable.Name = "btnChangeTable";
+            this.btnChangeTable.Size = new System.Drawing.Size(176, 76);
+            this.btnChangeTable.TabIndex = 2;
+            this.btnChangeTable.Text = "Chuyển bàn";
+            this.btnChangeTable.UseVisualStyleBackColor = false;
+            this.btnChangeTable.Click += new System.EventHandler(this.btnChangeTable_Click);
             // 
-            // columnHeader2
+            // btnThanhToan
             // 
-            this.columnHeader2.Text = "Số lượng";
+            this.btnThanhToan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnThanhToan.Location = new System.Drawing.Point(210, 85);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(176, 94);
+            this.btnThanhToan.TabIndex = 2;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
-            // columnHeader3
+            // cbChangeTable
             // 
-            this.columnHeader3.Text = "Đơn giá";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Thành tiền";
+            this.cbChangeTable.FormattingEnabled = true;
+            this.cbChangeTable.Location = new System.Drawing.Point(4, 51);
+            this.cbChangeTable.Name = "cbChangeTable";
+            this.cbChangeTable.Size = new System.Drawing.Size(200, 28);
+            this.cbChangeTable.TabIndex = 0;
             // 
             // FormQuanLyBan
             // 
@@ -253,12 +256,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "QuanLyBan";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -278,7 +280,7 @@
         private System.Windows.Forms.Button btnChangeTable;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.ComboBox cbChangeTable;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lstBill;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
