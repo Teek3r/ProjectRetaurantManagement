@@ -52,7 +52,6 @@ namespace ProjectRetaurantManagement
             //var result = db.Database.SqlQuery<>("DTTheoNgay", parameters);
             
             listView1.Items.Clear();
-            dataGridView1.DataSource = db.DTTheoNgay().ToList();
             for (int i = 0; i < listNgay.Count; i++)
             {
 
