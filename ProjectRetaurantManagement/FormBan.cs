@@ -38,7 +38,7 @@ namespace ProjectRetaurantManagement
 
         private void buttonThemBan_Click(object sender, EventArgs e)
         {
-            Ban b = new Ban() { MaBan = textBoxMaBan.Text, TenBan = textBoxTenBan.Text, TrangThai = "Trong", HoaDons = null };
+            Ban b = new Ban() { MaBan = textBoxMaBan.Text, TenBan = textBoxTenBan.Text, TrangThai = "Trong", HoaDon = null };
             db.Ban.Add(b);
             db.SaveChanges();
             loadData();

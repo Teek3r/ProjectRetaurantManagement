@@ -27,18 +27,25 @@ namespace ProjectRetaurantManagement
             cbChangeTable.DisplayMember = "TenBan";
             foreach (Ban item in ban)
             {
-                Button btn = new Button() { Width = 100, Height = 100 };
+                Button btn = new Button()
+                {
+                    Width = 100,
+                    Height = 100,
+                    BackColor = System.Drawing.Color.FromArgb(22, 115, 126),
+                    ForeColor = System.Drawing.Color.White,
+                    Font = new Font("Tahoma", 10, FontStyle.Bold)
+                };
                 btn.Text = item.TenBan + Environment.NewLine + item.TrangThai;
 
                 btn.Click += btnClick;
                 btn.Tag = item;
                 if (item.TrangThai == "Trống")
                 {
-                    btn.BackColor = Color.Aqua;
+                    btn.BackColor = Color.FromArgb(22, 115, 126);
                 }
                 else
                 {
-                    btn.BackColor = Color.Bisque;
+                    btn.BackColor = Color.FromArgb(190, 52, 85);
                 }
                 flpTable.Controls.Add(btn);
             }
@@ -250,5 +257,7 @@ namespace ProjectRetaurantManagement
             LoaiMonAn lma = cbLoaiMon.SelectedItem as LoaiMonAn;
             LoadFoods(lma.MaLoaiMonAn);
         }
+
+        
     }
 }
