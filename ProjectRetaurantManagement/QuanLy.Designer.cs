@@ -60,18 +60,16 @@ namespace ProjectRetaurantManagement
             this.panel1.Controls.Add(this.buttonBan);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 709);
+            this.panel1.Size = new System.Drawing.Size(148, 609);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProjectRetaurantManagement.Properties.Resources.restaurant;
-            this.pictureBox1.Location = new System.Drawing.Point(46, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -82,14 +80,13 @@ namespace ProjectRetaurantManagement
             this.buttonTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.buttonTaiKhoan.FlatAppearance.BorderSize = 0;
             this.buttonTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTaiKhoan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.buttonTaiKhoan.Location = new System.Drawing.Point(0, 515);
-            this.buttonTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonTaiKhoan.Location = new System.Drawing.Point(0, 335);
             this.buttonTaiKhoan.Name = "buttonTaiKhoan";
-            this.buttonTaiKhoan.Size = new System.Drawing.Size(294, 72);
+            this.buttonTaiKhoan.Size = new System.Drawing.Size(207, 47);
             this.buttonTaiKhoan.TabIndex = 2;
-            this.buttonTaiKhoan.Text = "Quản lý tài khoản";
+            this.buttonTaiKhoan.Text = "TÀI KHOẢN";
             this.buttonTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonTaiKhoan.UseVisualStyleBackColor = false;
             this.buttonTaiKhoan.Click += new System.EventHandler(this.button6_Click);
@@ -100,14 +97,13 @@ namespace ProjectRetaurantManagement
             this.buttonThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.buttonThongKe.FlatAppearance.BorderSize = 0;
             this.buttonThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThongKe.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThongKe.ForeColor = System.Drawing.Color.White;
-            this.buttonThongKe.Location = new System.Drawing.Point(0, 458);
-            this.buttonThongKe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonThongKe.Location = new System.Drawing.Point(0, 298);
             this.buttonThongKe.Name = "buttonThongKe";
-            this.buttonThongKe.Size = new System.Drawing.Size(254, 72);
+            this.buttonThongKe.Size = new System.Drawing.Size(169, 47);
             this.buttonThongKe.TabIndex = 2;
-            this.buttonThongKe.Text = "Thống kê";
+            this.buttonThongKe.Text = "THỐNG KÊ";
             this.buttonThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThongKe.UseVisualStyleBackColor = false;
             this.buttonThongKe.Click += new System.EventHandler(this.button5_Click);
@@ -118,14 +114,13 @@ namespace ProjectRetaurantManagement
             this.buttonThucAn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.buttonThucAn.FlatAppearance.BorderSize = 0;
             this.buttonThucAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonThucAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThucAn.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThucAn.ForeColor = System.Drawing.Color.White;
-            this.buttonThucAn.Location = new System.Drawing.Point(0, 288);
-            this.buttonThucAn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonThucAn.Location = new System.Drawing.Point(0, 225);
             this.buttonThucAn.Name = "buttonThucAn";
-            this.buttonThucAn.Size = new System.Drawing.Size(268, 72);
+            this.buttonThucAn.Size = new System.Drawing.Size(187, 47);
             this.buttonThucAn.TabIndex = 2;
-            this.buttonThucAn.Text = "Quản lý món ăn";
+            this.buttonThucAn.Text = "MÓN ĂN";
             this.buttonThucAn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThucAn.UseVisualStyleBackColor = false;
             this.buttonThucAn.Click += new System.EventHandler(this.button2_Click);
@@ -136,14 +131,13 @@ namespace ProjectRetaurantManagement
             this.buttonDanhMuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.buttonDanhMuc.FlatAppearance.BorderSize = 0;
             this.buttonDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDanhMuc.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDanhMuc.ForeColor = System.Drawing.Color.White;
-            this.buttonDanhMuc.Location = new System.Drawing.Point(0, 402);
-            this.buttonDanhMuc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonDanhMuc.Location = new System.Drawing.Point(0, 261);
             this.buttonDanhMuc.Name = "buttonDanhMuc";
-            this.buttonDanhMuc.Size = new System.Drawing.Size(332, 72);
+            this.buttonDanhMuc.Size = new System.Drawing.Size(232, 47);
             this.buttonDanhMuc.TabIndex = 2;
-            this.buttonDanhMuc.Text = "Quản lý loại món ăn";
+            this.buttonDanhMuc.Text = "LOẠI MÓN ĂN";
             this.buttonDanhMuc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDanhMuc.UseVisualStyleBackColor = false;
             this.buttonDanhMuc.Click += new System.EventHandler(this.button4_Click);
@@ -154,14 +148,13 @@ namespace ProjectRetaurantManagement
             this.buttonQuanLyBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.buttonQuanLyBan.FlatAppearance.BorderSize = 0;
             this.buttonQuanLyBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuanLyBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQuanLyBan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQuanLyBan.ForeColor = System.Drawing.Color.White;
-            this.buttonQuanLyBan.Location = new System.Drawing.Point(0, 231);
-            this.buttonQuanLyBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonQuanLyBan.Location = new System.Drawing.Point(0, 150);
             this.buttonQuanLyBan.Name = "buttonQuanLyBan";
-            this.buttonQuanLyBan.Size = new System.Drawing.Size(270, 72);
+            this.buttonQuanLyBan.Size = new System.Drawing.Size(189, 47);
             this.buttonQuanLyBan.TabIndex = 2;
-            this.buttonQuanLyBan.Text = "Quản lý đặt bàn";
+            this.buttonQuanLyBan.Text = "ĐẶT BÀN";
             this.buttonQuanLyBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonQuanLyBan.UseVisualStyleBackColor = false;
             this.buttonQuanLyBan.Click += new System.EventHandler(this.button1_Click);
@@ -172,14 +165,13 @@ namespace ProjectRetaurantManagement
             this.buttonBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.buttonBan.FlatAppearance.BorderSize = 0;
             this.buttonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBan.ForeColor = System.Drawing.Color.White;
-            this.buttonBan.Location = new System.Drawing.Point(0, 345);
-            this.buttonBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonBan.Location = new System.Drawing.Point(0, 188);
             this.buttonBan.Name = "buttonBan";
-            this.buttonBan.Size = new System.Drawing.Size(249, 72);
+            this.buttonBan.Size = new System.Drawing.Size(166, 47);
             this.buttonBan.TabIndex = 2;
-            this.buttonBan.Text = "Quản lý bàn";
+            this.buttonBan.Text = "BÀN";
             this.buttonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonBan.UseVisualStyleBackColor = false;
             this.buttonBan.Click += new System.EventHandler(this.button3_Click);
@@ -188,10 +180,9 @@ namespace ProjectRetaurantManagement
             // 
             this.panelXuly.Controls.Add(this.pictureBox2);
             this.panelXuly.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelXuly.Location = new System.Drawing.Point(249, 0);
-            this.panelXuly.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelXuly.Location = new System.Drawing.Point(148, 0);
             this.panelXuly.Name = "panelXuly";
-            this.panelXuly.Size = new System.Drawing.Size(1077, 709);
+            this.panelXuly.Size = new System.Drawing.Size(988, 609);
             this.panelXuly.TabIndex = 1;
             // 
             // pictureBox2
@@ -199,23 +190,21 @@ namespace ProjectRetaurantManagement
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::ProjectRetaurantManagement.Properties.Resources.platter_2009590;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1077, 709);
+            this.pictureBox2.Size = new System.Drawing.Size(988, 609);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // formQuanLy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1326, 709);
+            this.ClientSize = new System.Drawing.Size(1136, 609);
             this.Controls.Add(this.panelXuly);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "formQuanLy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhà hàng";

@@ -12,6 +12,8 @@ namespace ProjectRetaurantManagement
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class QuanLyNhaHangEntities : DbContext
     {
@@ -32,5 +34,10 @@ namespace ProjectRetaurantManagement
         public virtual DbSet<LoaiMonAn> LoaiMonAn { get; set; }
         public virtual DbSet<MonAn> MonAn { get; set; }
         public virtual DbSet<NhanVien> NhanVien { get; set; }
+    
+        public virtual ObjectResult<DTTheoNgay_Result> DTTheoNgay()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<DTTheoNgay_Result>("DTTheoNgay");
+        }
     }
 }

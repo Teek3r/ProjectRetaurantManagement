@@ -47,8 +47,12 @@ namespace ProjectRetaurantManagement
 
             List<DateTime?> listNgay = query.Select(g => g.Ngay).ToList();
             List<double?> doanhThu = query.Select(g => g.Tien).ToList();
+            //var query = from h in HoaDon
+            //            select 
+            //var result = db.Database.SqlQuery<>("DTTheoNgay", parameters);
+            
             listView1.Items.Clear();
-
+            dataGridView1.DataSource = db.DTTheoNgay().ToList();
             for (int i = 0; i < listNgay.Count; i++)
             {
 
