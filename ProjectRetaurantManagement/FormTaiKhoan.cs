@@ -73,5 +73,10 @@ namespace ProjectRetaurantManagement
             db.SaveChanges();
             loadData();
         }
+
+        private void FormTaiKhoan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

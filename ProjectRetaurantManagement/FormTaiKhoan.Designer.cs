@@ -28,136 +28,174 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewTaiKhoan = new System.Windows.Forms.DataGridView();
             this.buttonSuaNhanVien = new System.Windows.Forms.Button();
             this.buttonXoaNhanVien = new System.Windows.Forms.Button();
             this.buttonThemNhanVien = new System.Windows.Forms.Button();
             this.textBoxLuong = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBoxChucVu = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBoxTenNhanVien = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBoxMaNhanVien = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTaiKhoan)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewTaiKhoan
             // 
+            this.dataGridViewTaiKhoan.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTaiKhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTaiKhoan.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewTaiKhoan.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewTaiKhoan.Name = "dataGridViewTaiKhoan";
-            this.dataGridViewTaiKhoan.Size = new System.Drawing.Size(431, 385);
-            this.dataGridViewTaiKhoan.TabIndex = 1;
+            this.dataGridViewTaiKhoan.Size = new System.Drawing.Size(362, 521);
+            this.dataGridViewTaiKhoan.TabIndex = 18;
             // 
             // buttonSuaNhanVien
             // 
-            this.buttonSuaNhanVien.Location = new System.Drawing.Point(241, 403);
+            this.buttonSuaNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.buttonSuaNhanVien.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSuaNhanVien.ForeColor = System.Drawing.Color.White;
+            this.buttonSuaNhanVien.Location = new System.Drawing.Point(262, 539);
             this.buttonSuaNhanVien.Name = "buttonSuaNhanVien";
-            this.buttonSuaNhanVien.Size = new System.Drawing.Size(75, 23);
-            this.buttonSuaNhanVien.TabIndex = 7;
+            this.buttonSuaNhanVien.Size = new System.Drawing.Size(120, 40);
+            this.buttonSuaNhanVien.TabIndex = 20;
             this.buttonSuaNhanVien.Text = "Sửa";
-            this.buttonSuaNhanVien.UseVisualStyleBackColor = true;
-            this.buttonSuaNhanVien.Click += new System.EventHandler(this.buttonSuaNhanVien_Click);
+            this.buttonSuaNhanVien.UseVisualStyleBackColor = false;
             // 
             // buttonXoaNhanVien
             // 
-            this.buttonXoaNhanVien.Location = new System.Drawing.Point(129, 403);
+            this.buttonXoaNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.buttonXoaNhanVien.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXoaNhanVien.ForeColor = System.Drawing.Color.White;
+            this.buttonXoaNhanVien.Location = new System.Drawing.Point(136, 539);
             this.buttonXoaNhanVien.Name = "buttonXoaNhanVien";
-            this.buttonXoaNhanVien.Size = new System.Drawing.Size(75, 23);
-            this.buttonXoaNhanVien.TabIndex = 8;
+            this.buttonXoaNhanVien.Size = new System.Drawing.Size(120, 40);
+            this.buttonXoaNhanVien.TabIndex = 21;
             this.buttonXoaNhanVien.Text = "Xóa";
-            this.buttonXoaNhanVien.UseVisualStyleBackColor = true;
-            this.buttonXoaNhanVien.Click += new System.EventHandler(this.buttonXoaNhanVien_Click);
+            this.buttonXoaNhanVien.UseVisualStyleBackColor = false;
             // 
             // buttonThemNhanVien
             // 
-            this.buttonThemNhanVien.Location = new System.Drawing.Point(14, 403);
+            this.buttonThemNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.buttonThemNhanVien.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThemNhanVien.ForeColor = System.Drawing.Color.White;
+            this.buttonThemNhanVien.Location = new System.Drawing.Point(10, 539);
             this.buttonThemNhanVien.Name = "buttonThemNhanVien";
-            this.buttonThemNhanVien.Size = new System.Drawing.Size(75, 23);
-            this.buttonThemNhanVien.TabIndex = 9;
+            this.buttonThemNhanVien.Size = new System.Drawing.Size(120, 40);
+            this.buttonThemNhanVien.TabIndex = 22;
             this.buttonThemNhanVien.Text = "Thêm";
-            this.buttonThemNhanVien.UseVisualStyleBackColor = true;
-            this.buttonThemNhanVien.Click += new System.EventHandler(this.buttonThemNhanVien_Click);
+            this.buttonThemNhanVien.UseVisualStyleBackColor = false;
             // 
             // textBoxLuong
             // 
-            this.textBoxLuong.Location = new System.Drawing.Point(547, 183);
+            this.textBoxLuong.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLuong.Location = new System.Drawing.Point(591, 186);
             this.textBoxLuong.Name = "textBoxLuong";
-            this.textBoxLuong.Size = new System.Drawing.Size(219, 20);
-            this.textBoxLuong.TabIndex = 14;
+            this.textBoxLuong.Size = new System.Drawing.Size(193, 30);
+            this.textBoxLuong.TabIndex = 27;
             // 
-            // label4
+            // label7
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(450, 190);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Lương";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.label7.Location = new System.Drawing.Point(424, 189);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 23);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Lương";
             // 
             // textBoxChucVu
             // 
-            this.textBoxChucVu.Location = new System.Drawing.Point(547, 131);
+            this.textBoxChucVu.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxChucVu.Location = new System.Drawing.Point(591, 129);
             this.textBoxChucVu.Name = "textBoxChucVu";
-            this.textBoxChucVu.Size = new System.Drawing.Size(219, 20);
-            this.textBoxChucVu.TabIndex = 15;
+            this.textBoxChucVu.Size = new System.Drawing.Size(193, 30);
+            this.textBoxChucVu.TabIndex = 28;
             // 
-            // label3
+            // label6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(450, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Chức Vụ";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.label6.Location = new System.Drawing.Point(424, 132);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 23);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Chức vụ";
             // 
             // textBoxTenNhanVien
             // 
-            this.textBoxTenNhanVien.Location = new System.Drawing.Point(547, 69);
+            this.textBoxTenNhanVien.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTenNhanVien.Location = new System.Drawing.Point(591, 71);
             this.textBoxTenNhanVien.Name = "textBoxTenNhanVien";
-            this.textBoxTenNhanVien.Size = new System.Drawing.Size(219, 20);
-            this.textBoxTenNhanVien.TabIndex = 16;
+            this.textBoxTenNhanVien.Size = new System.Drawing.Size(193, 30);
+            this.textBoxTenNhanVien.TabIndex = 29;
             // 
-            // label2
+            // label5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(450, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Tên Nhân Viên";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.label5.Location = new System.Drawing.Point(424, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(144, 23);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Tên nhân viên";
             // 
             // textBoxMaNhanVien
             // 
-            this.textBoxMaNhanVien.Location = new System.Drawing.Point(547, 12);
+            this.textBoxMaNhanVien.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMaNhanVien.Location = new System.Drawing.Point(591, 12);
             this.textBoxMaNhanVien.Name = "textBoxMaNhanVien";
-            this.textBoxMaNhanVien.Size = new System.Drawing.Size(219, 20);
-            this.textBoxMaNhanVien.TabIndex = 17;
+            this.textBoxMaNhanVien.Size = new System.Drawing.Size(193, 30);
+            this.textBoxMaNhanVien.TabIndex = 30;
             // 
-            // label1
+            // label8
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(450, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Mã Nhân Viên";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.label8.Location = new System.Drawing.Point(424, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(137, 23);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Mã nhân viên";
             // 
             // FormTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(988, 609);
             this.Controls.Add(this.textBoxLuong);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxChucVu);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxTenNhanVien);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxMaNhanVien);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.buttonSuaNhanVien);
             this.Controls.Add(this.buttonXoaNhanVien);
             this.Controls.Add(this.buttonThemNhanVien);
@@ -165,6 +203,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTaiKhoan";
             this.Text = "FormTaiKhoan";
+            this.Load += new System.EventHandler(this.FormTaiKhoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTaiKhoan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,18 +211,17 @@
         }
 
         #endregion
-
         private System.Windows.Forms.DataGridView dataGridViewTaiKhoan;
         private System.Windows.Forms.Button buttonSuaNhanVien;
         private System.Windows.Forms.Button buttonXoaNhanVien;
         private System.Windows.Forms.Button buttonThemNhanVien;
         private System.Windows.Forms.TextBox textBoxLuong;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxChucVu;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxTenNhanVien;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxMaNhanVien;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
     }
 }
