@@ -185,10 +185,11 @@
             this.dateTimePickerEnd.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.dateTimePickerEnd.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.dateTimePickerEnd.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.dateTimePickerEnd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerEnd.Location = new System.Drawing.Point(705, 34);
             this.dateTimePickerEnd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(298, 26);
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(379, 36);
             this.dateTimePickerEnd.TabIndex = 11;
             // 
             // dateTimePickerStart
@@ -198,20 +199,20 @@
             this.dateTimePickerStart.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.dateTimePickerStart.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
             this.dateTimePickerStart.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            this.dateTimePickerStart.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerStart.Location = new System.Drawing.Point(230, 34);
             this.dateTimePickerStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(298, 26);
+            this.dateTimePickerStart.Size = new System.Drawing.Size(388, 36);
             this.dateTimePickerStart.TabIndex = 10;
             // 
             // chartThongKe
             // 
-            this.chartThongKe.Anchor = System.Windows.Forms.AnchorStyles.None;
             chartArea1.Name = "ChartArea1";
             this.chartThongKe.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartThongKe.Legends.Add(legend1);
-            this.chartThongKe.Location = new System.Drawing.Point(18, 103);
+            this.chartThongKe.Location = new System.Drawing.Point(13, 102);
             this.chartThongKe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartThongKe.Name = "chartThongKe";
             series1.ChartArea = "ChartArea1";
