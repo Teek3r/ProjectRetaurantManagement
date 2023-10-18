@@ -45,8 +45,8 @@ namespace ProjectRetaurantManagement
                             Tien = nhomHoaDon.Sum(hd => hd.TongTien)
                         };
 
-            List<DateTime?> listNgay = query.Select(g => g.Ngay).ToList();
-            List<double?> doanhThu = query.Select(g => g.Tien).ToList();
+            List<DateTime?> listNgay = db.GetDateByDateRange(startDate,endDate).ToList();
+            List<double?> doanhThu = db.GetDoanhThuByDateRange(startDate, endDate).ToList();
             //var query = from h in HoaDon
             //            select 
             //var result = db.Database.SqlQuery<>("DTTheoNgay", parameters);
@@ -66,10 +66,8 @@ namespace ProjectRetaurantManagement
 
             }
 
-
-
             chartThongKe.ChartAreas[0].AxisX.Interval = 1;
-            chartThongKe.ChartAreas[0].AxisX.IntervalType = DateTimeIntervalType.Number;
+            chartThongKe.ChartAreas[0].AxisX.IntervalType = DateTimeIntervalType.Days;
             chartThongKe.ChartAreas[0].AxisX.LabelStyle.Format = "dd/MM";
             chartThongKe.ChartAreas[0].AxisX.LabelStyle.Angle = -75;
             // Đặt màu nền và viền cho ChartArea
@@ -78,12 +76,12 @@ namespace ProjectRetaurantManagement
             chartThongKe.ChartAreas[0].BorderColor = Color.Gray;
 
             // Định dạng trục x
-            chartThongKe.ChartAreas[0].AxisX.LabelStyle.Font = new Font("Arial", 8);
+            chartThongKe.ChartAreas[0].AxisX.LabelStyle.Font = new Font("Tahoma", 8);
             chartThongKe.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.LightGray;
             // Các thuộc tính khác của trục x
 
             // Định dạng trục y
-            chartThongKe.ChartAreas[0].AxisY.LabelStyle.Font = new Font("Arial", 8);
+            chartThongKe.ChartAreas[0].AxisY.LabelStyle.Font = new Font("Tahoma", 8);
             chartThongKe.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.LightGray;
             // Các thuộc tính khác của trục y
             // Đặt kiểu hiển thị cho Series
@@ -112,6 +110,51 @@ namespace ProjectRetaurantManagement
             chartThongKe.Series["Doanh thu"].IsValueShownAsLabel = true;
 
             tinhToanDoanhThu(doanhThu);
+
+            //chartThongKe.ChartAreas[0].AxisX.Interval = 1;
+            //chartThongKe.ChartAreas[0].AxisX.IntervalType = DateTimeIntervalType.Number;
+            //chartThongKe.ChartAreas[0].AxisX.LabelStyle.Format = "dd/MM";
+            //chartThongKe.ChartAreas[0].AxisX.LabelStyle.Angle = -75;
+            //// Đặt màu nền và viền cho ChartArea
+            //chartThongKe.ChartAreas[0].BackColor = Color.White;
+            //chartThongKe.ChartAreas[0].BorderDashStyle = ChartDashStyle.Solid;
+            //chartThongKe.ChartAreas[0].BorderColor = Color.Gray;
+
+            //// Định dạng trục x
+            //chartThongKe.ChartAreas[0].AxisX.LabelStyle.Font = new Font("Arial", 8);
+            //chartThongKe.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.LightGray;
+            //// Các thuộc tính khác của trục x
+
+            //// Định dạng trục y
+            //chartThongKe.ChartAreas[0].AxisY.LabelStyle.Font = new Font("Arial", 8);
+            //chartThongKe.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.LightGray;
+            //// Các thuộc tính khác của trục y
+            //// Đặt kiểu hiển thị cho Series
+            //chartThongKe.Series[0].ChartType = SeriesChartType.Column;
+            //chartThongKe.Series["Doanh thu"]["PixelPointWidth"] = "20";
+            //// Đặt màu sắc và độ dày cho Series
+
+            ////System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(126)))));
+            //chartThongKe.Series[0].Color = System.Drawing.Color.FromArgb(22, 115, 126);
+            //chartThongKe.Series[0].BorderWidth = 2;
+
+            //// Hiển thị giá trị trên biểu đồ
+            //chartThongKe.Series[0].IsValueShownAsLabel = true;
+            //chartThongKe.Series[0].LabelForeColor = Color.Black;
+            //chartThongKe.Series[0].LabelFormat = "#,##0";
+
+            //// Đặt vị trí và màu sắc cho Legend
+            //chartThongKe.Legends[0].Docking = Docking.Bottom;
+            //chartThongKe.Legends[0].BackColor = Color.White;
+
+            //// Đặt kiểu phông chữ và màu sắc cho văn bản trong Legend
+            //chartThongKe.Legends[0].Font = new Font("Arial", 8);
+            //chartThongKe.Legends[0].ForeColor = Color.Black;
+
+            //chartThongKe.ChartAreas[0].AxisY.Enabled = AxisEnabled.True;
+            //chartThongKe.Series["Doanh thu"].IsValueShownAsLabel = true;
+
+            //tinhToanDoanhThu(doanhThu);
         }
         void tinhToanDoanhThu(List<double?> doanhThu)
         {

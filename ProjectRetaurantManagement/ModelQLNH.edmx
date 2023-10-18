@@ -143,6 +143,24 @@
           </ReferentialConstraint>
         </Association>
         <Function Name="DTTheoNgay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetDateByDateRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NgayBatDau" Type="date" Mode="In" />
+          <Parameter Name="NgayKetThuc" Type="date" Mode="In" />
+        </Function>
+        <Function Name="GetDoanhThuByDateRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NgayBatDau" Type="date" Mode="In" />
+          <Parameter Name="NgayKetThuc" Type="date" Mode="In" />
+        </Function>
+        <Function Name="ThemLoaiMonAn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MaLoaiMonAn" Type="varchar" Mode="In" />
+          <Parameter Name="TenLoaiMonAn" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="ThemMonAn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MaMonAn" Type="varchar" Mode="In" />
+          <Parameter Name="TenMonAn" Type="nvarchar" Mode="In" />
+          <Parameter Name="DonGia" Type="float" Mode="In" />
+          <Parameter Name="MaLoaiMonAn" Type="varchar" Mode="In" />
+        </Function>
         <EntityContainer Name="QuanLyNhaHangModelStoreContainer">
           <EntitySet Name="Ban" EntityType="Self.Ban" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ChiTietHD" EntityType="Self.ChiTietHD" Schema="dbo" store:Type="Tables" />
@@ -362,6 +380,24 @@
             <End Role="MonAn" EntitySet="MonAn" />
           </AssociationSet>
           <FunctionImport Name="DTTheoNgay" ReturnType="Collection(QuanLyNhaHangModel.DTTheoNgay_Result)" />
+          <FunctionImport Name="ThemLoaiMonAn">
+            <Parameter Name="MaLoaiMonAn" Mode="In" Type="String" />
+            <Parameter Name="TenLoaiMonAn" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ThemMonAn">
+            <Parameter Name="MaMonAn" Mode="In" Type="String" />
+            <Parameter Name="TenMonAn" Mode="In" Type="String" />
+            <Parameter Name="DonGia" Mode="In" Type="Double" />
+            <Parameter Name="MaLoaiMonAn" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetDateByDateRange" ReturnType="Collection(DateTime)">
+            <Parameter Name="NgayBatDau" Mode="In" Type="DateTime" />
+            <Parameter Name="NgayKetThuc" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="GetDoanhThuByDateRange" ReturnType="Collection(Double)">
+            <Parameter Name="NgayBatDau" Mode="In" Type="DateTime" />
+            <Parameter Name="NgayKetThuc" Mode="In" Type="DateTime" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="DTTheoNgay_Result">
           <Property Type="DateTime" Name="Ngay" Nullable="true" />
@@ -453,6 +489,10 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ThemLoaiMonAn" FunctionName="QuanLyNhaHangModel.Store.ThemLoaiMonAn" />
+          <FunctionImportMapping FunctionImportName="ThemMonAn" FunctionName="QuanLyNhaHangModel.Store.ThemMonAn" />
+          <FunctionImportMapping FunctionImportName="GetDateByDateRange" FunctionName="QuanLyNhaHangModel.Store.GetDateByDateRange" />
+          <FunctionImportMapping FunctionImportName="GetDoanhThuByDateRange" FunctionName="QuanLyNhaHangModel.Store.GetDoanhThuByDateRange" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

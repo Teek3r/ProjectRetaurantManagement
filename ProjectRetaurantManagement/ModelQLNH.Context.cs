@@ -39,5 +39,65 @@ namespace ProjectRetaurantManagement
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<DTTheoNgay_Result>("DTTheoNgay");
         }
+    
+        public virtual int ThemLoaiMonAn(string maLoaiMonAn, string tenLoaiMonAn)
+        {
+            var maLoaiMonAnParameter = maLoaiMonAn != null ?
+                new ObjectParameter("MaLoaiMonAn", maLoaiMonAn) :
+                new ObjectParameter("MaLoaiMonAn", typeof(string));
+    
+            var tenLoaiMonAnParameter = tenLoaiMonAn != null ?
+                new ObjectParameter("TenLoaiMonAn", tenLoaiMonAn) :
+                new ObjectParameter("TenLoaiMonAn", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ThemLoaiMonAn", maLoaiMonAnParameter, tenLoaiMonAnParameter);
+        }
+    
+        public virtual int ThemMonAn(string maMonAn, string tenMonAn, Nullable<double> donGia, string maLoaiMonAn)
+        {
+            var maMonAnParameter = maMonAn != null ?
+                new ObjectParameter("MaMonAn", maMonAn) :
+                new ObjectParameter("MaMonAn", typeof(string));
+    
+            var tenMonAnParameter = tenMonAn != null ?
+                new ObjectParameter("TenMonAn", tenMonAn) :
+                new ObjectParameter("TenMonAn", typeof(string));
+    
+            var donGiaParameter = donGia.HasValue ?
+                new ObjectParameter("DonGia", donGia) :
+                new ObjectParameter("DonGia", typeof(double));
+    
+            var maLoaiMonAnParameter = maLoaiMonAn != null ?
+                new ObjectParameter("MaLoaiMonAn", maLoaiMonAn) :
+                new ObjectParameter("MaLoaiMonAn", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ThemMonAn", maMonAnParameter, tenMonAnParameter, donGiaParameter, maLoaiMonAnParameter);
+        }
+    
+        public virtual ObjectResult<Nullable<System.DateTime>> GetDateByDateRange(Nullable<System.DateTime> ngayBatDau, Nullable<System.DateTime> ngayKetThuc)
+        {
+            var ngayBatDauParameter = ngayBatDau.HasValue ?
+                new ObjectParameter("NgayBatDau", ngayBatDau) :
+                new ObjectParameter("NgayBatDau", typeof(System.DateTime));
+    
+            var ngayKetThucParameter = ngayKetThuc.HasValue ?
+                new ObjectParameter("NgayKetThuc", ngayKetThuc) :
+                new ObjectParameter("NgayKetThuc", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<System.DateTime>>("GetDateByDateRange", ngayBatDauParameter, ngayKetThucParameter);
+        }
+    
+        public virtual ObjectResult<Nullable<double>> GetDoanhThuByDateRange(Nullable<System.DateTime> ngayBatDau, Nullable<System.DateTime> ngayKetThuc)
+        {
+            var ngayBatDauParameter = ngayBatDau.HasValue ?
+                new ObjectParameter("NgayBatDau", ngayBatDau) :
+                new ObjectParameter("NgayBatDau", typeof(System.DateTime));
+    
+            var ngayKetThucParameter = ngayKetThuc.HasValue ?
+                new ObjectParameter("NgayKetThuc", ngayKetThuc) :
+                new ObjectParameter("NgayKetThuc", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<double>>("GetDoanhThuByDateRange", ngayBatDauParameter, ngayKetThucParameter);
+        }
     }
 }
