@@ -32,8 +32,10 @@ namespace ProjectRetaurantManagement
 
         private void buttonThemLoaiMonAn_Click(object sender, EventArgs e)
         {
-            db.LoaiMonAn.Add(new LoaiMonAn() { MaLoaiMonAn = textBoxMaLoaiMonAn.Text, TenLoaiMonAn = textBoxTenLoaiMonAn.Text });
-            db.SaveChanges();
+            //db.LoaiMonAn.Add(new LoaiMonAn() { MaLoaiMonAn = textBoxMaLoaiMonAn.Text, TenLoaiMonAn = textBoxTenLoaiMonAn.Text });
+            //db.SaveChanges();
+
+            db.ThemLoaiMonAn(textBoxMaLoaiMonAn.Text, textBoxTenLoaiMonAn.Text);
             loadData();
         }
 

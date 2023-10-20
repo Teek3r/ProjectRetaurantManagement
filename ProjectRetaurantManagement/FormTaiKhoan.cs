@@ -39,6 +39,7 @@ namespace ProjectRetaurantManagement
             textBoxChucVu.DataBindings.Add(new Binding("Text", dataGridViewTaiKhoan.DataSource, "ChứcVụ"));
             textBoxLuong.DataBindings.Add(new Binding("Text", dataGridViewTaiKhoan.DataSource, "Lương"));
         }
+
         private void buttonThemNhanVien_Click(object sender, EventArgs e)
         {
             NhanVien n = new NhanVien()
@@ -73,10 +74,44 @@ namespace ProjectRetaurantManagement
             db.SaveChanges();
             loadData();
         }
+        //private void buttonThemNhanVien_Click(object sender, EventArgs e)
+        //{
+        //    NhanVien n = new NhanVien()
+        //    {
+        //        MaNV = textBoxMaNhanVien.Text,
+        //        TenNV = textBoxTenNhanVien.Text,
+        //        ChucVu = textBoxChucVu.Text,
+        //        Luong = int.Parse(textBoxLuong.Text)
+        //    };
+        //    db.NhanVien.Add(n);
+        //    db.SaveChanges();
+        //    loadData();
+        //}
 
-        private void FormTaiKhoan_Load(object sender, EventArgs e)
-        {
+        //private void buttonXoaNhanVien_Click(object sender, EventArgs e)
+        //{
+        //    string maNhanVien = textBoxMaNhanVien.Text;
+        //    NhanVien n = db.NhanVien.Where(p => p.MaNV == maNhanVien).SingleOrDefault();
+        //    db.NhanVien.Remove(n);
+        //    db.SaveChanges();
+        //    loadData();
+        //}
 
-        }
+        //private void buttonSuaNhanVien_Click(object sender, EventArgs e)
+        //{
+        //    string maNhanVien = dataGridViewTaiKhoan.SelectedCells[0].OwningRow.Cells["MãNhânViên"].Value.ToString();
+        //    NhanVien n = db.NhanVien.Find(maNhanVien);
+        //    n.MaNV = textBoxMaNhanVien.Text;
+        //    n.TenNV = textBoxTenNhanVien.Text;
+        //    n.ChucVu = textBoxChucVu.Text;
+        //    n.Luong = int.Parse(textBoxLuong.Text);
+        //    db.SaveChanges();
+        //    loadData();
+        //}
+
+        //private void FormTaiKhoan_Load(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

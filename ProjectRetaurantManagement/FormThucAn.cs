@@ -42,16 +42,18 @@ namespace ProjectRetaurantManagement
 
         private void buttonThemMonAn_Click(object sender, EventArgs e)
         {
-            MonAn m = new MonAn()
-            {
-                MaMonAn = textBoxMaMonAn.Text,
-                TenMonAn = textBoxTenMonAn.Text,
-                DonGia = int.Parse(textBoxDonGia.Text),
-                MaLoaiMonAn = textBoxMaLoaiMonAn.Text,
-            };
-            db.MonAn.Add(m);
-            db.SaveChanges();
+            ////MonAn m = new MonAn()
+            ////{
+            ////    MaMonAn = textBoxMaMonAn.Text,
+            ////    TenMonAn = textBoxTenMonAn.Text,
+            ////    DonGia = int.Parse(textBoxDonGia.Text),
+            ////    MaLoaiMonAn = textBoxMaLoaiMonAn.Text,
+            ////};
+            ////db.MonAn.Add(m);
+            //db.SaveChanges();
+            db.ThemMonAn(textBoxMaMonAn.Text, textBoxTenMonAn.Text, int.Parse(textBoxDonGia.Text), textBoxMaLoaiMonAn.Text);
             loadData();
+       //     AddBinding();
         }
 
         private void buttonXoaMonAn_Click(object sender, EventArgs e)
@@ -61,6 +63,7 @@ namespace ProjectRetaurantManagement
             db.MonAn.Remove(m);
             db.SaveChanges();
             loadData();
+            //AddBinding();
         }
 
         private void buttonSuaMonAn_Click(object sender, EventArgs e)
@@ -73,11 +76,7 @@ namespace ProjectRetaurantManagement
             m.MaLoaiMonAn = textBoxMaLoaiMonAn.Text;
             db.SaveChanges();
             loadData();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
+            AddBinding();
         }
     }
 }
