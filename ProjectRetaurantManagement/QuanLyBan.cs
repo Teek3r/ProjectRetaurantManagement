@@ -19,12 +19,20 @@ namespace ProjectRetaurantManagement
             LoadTable();
             LoadCategories();
         }
+        void LoadTableChange(string maBan)
+        {
+            List<Ban> ban = db.Ban.Where(row => row.MaBan != maBan).ToList();
+            
+            cbChangeTable.DataSource = ban;
+            cbChangeTable.DisplayMember = "TenBan";
+        }
         #region methods
         void LoadTable()
         {
             List<Ban> ban = db.Ban.ToList();
-            cbChangeTable.DataSource = ban;
-            cbChangeTable.DisplayMember = "TenBan";
+            LoadTableChange("");
+            //cbChangeTable.DataSource = ban;
+            //cbChangeTable.DisplayMember = "TenBan";
             foreach (Ban item in ban)
             {
                 Button btn = new Button()
@@ -155,6 +163,8 @@ namespace ProjectRetaurantManagement
             string tableID = ((sender as Button).Tag as Ban).MaBan;
             lstBill.Tag = (sender as Button).Tag;
             HoaDon billID = db.HoaDon.Where(row => row.MaBan == tableID && row.TrangThaiThanhToan == "Chưa thanh toán").FirstOrDefault();
+            labelTable.Text = ((sender as Button).Tag as Ban).TenBan;
+            LoadTableChange(tableID);
             if (billID == null)
                 ShowBill(null);
             else
@@ -236,12 +246,17 @@ namespace ProjectRetaurantManagement
             Ban ban = new Ban();
             if (lstBill.Tag != null)
                 ban = lstBill.Tag as Ban;
-            ban.TrangThai = "Trống";
+            //ban.TrangThai = "Trống";
             HoaDon hd = db.HoaDon.Where(row => row.MaBan == ban.MaBan && row.TrangThaiThanhToan == "Chưa thanh toán").FirstOrDefault();
             if (hd == null)
             {
                 return;
             }
+            else
+            {
+                MessageBox.Show("Thanh toán", "Xác nhận thanh toán?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+            }
+            ban.TrangThai = "Trống";
             hd.TrangThaiThanhToan = "Đã thanh toán";
             db.SaveChanges();
             ShowBill(null);
@@ -257,7 +272,5 @@ namespace ProjectRetaurantManagement
             LoaiMonAn lma = cbLoaiMon.SelectedItem as LoaiMonAn;
             LoadFoods(lma.MaLoaiMonAn);
         }
-
-        
     }
 }
