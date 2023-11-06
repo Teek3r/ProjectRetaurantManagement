@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjectRetaurantManagement
 {
@@ -25,6 +26,7 @@ namespace ProjectRetaurantManagement
             
             cbChangeTable.DataSource = ban;
             cbChangeTable.DisplayMember = "TenBan";
+            
         }
         #region methods
         void LoadTable()
@@ -68,7 +70,6 @@ namespace ProjectRetaurantManagement
                 List<ChiTietHD> cthd = db.ChiTietHD.Where(row => row.MaHD == id).ToList();
                 HoaDon tongHD = db.HoaDon.Where(row => row.MaHD == id).FirstOrDefault();
                 tongHD.TongTien = 0;
-                //tim id ban trong chi tiêt hoa don sau do list ra ( foreach )
                 foreach (ChiTietHD item in cthd)
                 {
                     ListViewItem lsvItem = new ListViewItem(item.MonAn.TenMonAn.ToString());
@@ -82,8 +83,6 @@ namespace ProjectRetaurantManagement
                 db.SaveChanges();
             }
             txbTongTien.Text = tongTien.ToString("c");
-            //CultureInfo cul = new CultureInfo("en-US");
-            //txbTongTien.Text = tongTien.ToString("c", cul);
         }
         void LoadFoods(string id)
         {
@@ -131,6 +130,8 @@ namespace ProjectRetaurantManagement
             else
                 maCTHD += ("00" + numBillID.ToString());
             return maCTHD;//Trả ra Chi tiet hoa don (max + 1) VD: CTHD005 -> CTHD006
+            
+            
         }
         string TangMaHD()
         {
